@@ -1,0 +1,9 @@
+services:
+  notebook:
+    image: jupyter/minimal-notebook
+    container_name: notebook
+    ports:
+      - 8888:8888
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_TOKEN: "docker"
