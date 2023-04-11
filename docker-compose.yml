@@ -1,6 +1,6 @@
 services:
   notebook:
-    image: jupyter/minimal-notebook
+    build: .
     container_name: notebook
     ports:
       - 8888:8888
